@@ -16,7 +16,6 @@ irq_common_stub:
     mov fs, ax
     mov gs, ax
 
-    cli
     call irq_handler
 
     pop ebx                     ; reload the original data segment descriptor
